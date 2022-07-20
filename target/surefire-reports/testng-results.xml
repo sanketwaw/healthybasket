@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-19T10:26:26Z" name="Healthybasketsuite" finished-at="2022-07-19T10:28:26Z" duration-ms="120054">
+    <groups>
+    </groups>
+    <test started-at="2022-07-19T10:26:26Z" name="login Test" finished-at="2022-07-19T10:28:26Z" duration-ms="120054">
+      <class name="com.healthybasket.testcases.TC_loginDDT">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.healthybasket.testcases.TC_loginDDT@6236eb5f]" started-at="2022-07-19T10:26:27Z" name="setup" finished-at="2022-07-19T10:26:35Z" duration-ms="8684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login_DDT(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.healthybasket.testcases.TC_loginDDT@6236eb5f]" started-at="2022-07-19T10:26:38Z" name="login_DDT" data-provider="logindata" finished-at="2022-07-19T10:27:31Z" duration-ms="53419" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9096643401]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sankettest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Successfully logged in!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_DDT -->
+        <test-method signature="login_DDT(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.healthybasket.testcases.TC_loginDDT@6236eb5f]" started-at="2022-07-19T10:27:31Z" name="login_DDT" data-provider="logindata" finished-at="2022-07-19T10:27:59Z" duration-ms="27591" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9860835773]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sankettest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Successfully logged in!]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test Case2Failed expected [Successfully logged in!] but found [Invalid mobile or password!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test Case2Failed expected [Successfully logged in!] but found [Invalid mobile or password!]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.healthybasket.testcases.TC_loginDDT.login_DDT(TC_loginDDT.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_DDT -->
+        <test-method signature="login_DDT(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.healthybasket.testcases.TC_loginDDT@6236eb5f]" started-at="2022-07-19T10:27:59Z" name="login_DDT" data-provider="logindata" finished-at="2022-07-19T10:28:25Z" duration-ms="26617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9096643401]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sankettesttt]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid mobile or password!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_DDT -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.healthybasket.testcases.TC_loginDDT@6236eb5f]" started-at="2022-07-19T10:28:25Z" name="teardown" finished-at="2022-07-19T10:28:26Z" duration-ms="836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.healthybasket.testcases.TC_loginDDT -->
+    </test> <!-- login Test -->
+  </suite> <!-- Healthybasketsuite -->
+</testng-results>

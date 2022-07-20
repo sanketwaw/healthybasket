@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Healthybasketsuite]" parallel="none">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.healthybasket.utilities.Reporting"/>
+  </listeners>
+  <test name="login Test(failed)" parallel="none">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.healthybasket.testcases.TC_loginDDT">
+        <methods>
+          <include name="teardown"/>
+          <include name="login_DDT" invocation-numbers="1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.healthybasket.testcases.TC_loginDDT -->
+    </classes>
+  </test> <!-- login Test(failed) -->
+</suite> <!-- Failed suite [Healthybasketsuite] -->

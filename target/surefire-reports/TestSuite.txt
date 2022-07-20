@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 122.471 s <<< FAILURE! - in TestSuite
+login_DDT(com.healthybasket.testcases.TC_loginDDT)  Time elapsed: 27.591 s  <<< FAILURE!
+java.lang.AssertionError: Test Case2Failed expected [Successfully logged in!] but found [Invalid mobile or password!]
+	at com.healthybasket.testcases.TC_loginDDT.login_DDT(TC_loginDDT.java:58)
+

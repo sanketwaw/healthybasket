@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Healthybasketsuite" parallel="none">
+	<listeners>
+		<listener class-name="com.healthybasket.utilities.Reporting" />
+	</listeners>
+	
+	<test name="login Test">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<!--<class name="com.healthybasket.testcases.TC_login" />-->
+			<class name="com.healthybasket.testcases.TC_loginDDT" />
+		</classes>
+	</test>
+</suite>
